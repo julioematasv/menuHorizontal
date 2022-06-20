@@ -34,3 +34,11 @@ nav a:hover {
   background-color: rgba(0, 195, 255, 0.8);
 }
 
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .desktop .primary-links, nav .desktop .secondary-links {
+  display: flex;
+}
