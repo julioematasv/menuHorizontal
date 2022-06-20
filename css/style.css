@@ -1,0 +1,36 @@
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem; font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #1e1e1e;
+  color: #fafafa;
+  width: 100%;
+}
+
+nav .mobile {}
+
+nav .logo {
+  min-width: 25rem;
+}
+
+nav a {
+  color: #fafafa;
+  text-decoration: none;
+  display: block;
+  padding: 2rem; 2.5rem;
+}
+
+nav a:hover {
+  color: #1e1e1e;
+  background-color: rgba(0, 195, 255, 0.8);
+}
+
