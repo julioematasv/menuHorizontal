@@ -43,7 +43,8 @@ nav .desktop {
   padding: 0 2rem;
 }
 
-nav .desktop .primary-links, nav .desktop .secondary-links {
+nav .desktop .primary-links, 
+nav .desktop .secondary-links {
   display: flex;
 }
 
@@ -52,3 +53,26 @@ nav .desktop .primary-links, nav .desktop .secondary-links {
 }
 
 /* Mediaquerys */
+
+@media screen and (max-width: 768px){
+  nav .logo {
+    min-width: 12rem;
+  }
+
+  nav .desktop .primary-links, nav .desktop .secondary-links {
+    display: none;
+  }
+
+  .secondary.mini {
+    display: block;
+  }
+}
+
+
+/* ============================ */
+
+@media screen and (max-width: 480px){
+  nav .logo {
+    display: none;
+  }
+}
