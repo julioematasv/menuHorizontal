@@ -16,7 +16,9 @@ nav {
   width: 100%;
 }
 
-nav .mobile {}
+nav .mobile {
+  display: none;
+}
 
 nav .logo {
   min-width: 25rem;
@@ -37,8 +39,16 @@ nav a:hover {
 nav .desktop {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
 }
 
 nav .desktop .primary-links, nav .desktop .secondary-links {
   display: flex;
 }
+
+.secondary.mini {
+  display: none;
+}
+
+/* Mediaquerys */
