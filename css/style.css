@@ -28,7 +28,7 @@ nav a {
   color: #fafafa;
   text-decoration: none;
   display: block;
-  padding: 2rem; 2.5rem;
+  padding: 2rem 2.5rem;
 }
 
 nav a:hover {
@@ -48,31 +48,61 @@ nav .desktop .secondary-links {
   display: flex;
 }
 
-.secondary.mini {
+.secondary {
   display: none;
 }
 
-/* Mediaquerys */
+nav .desktop .submenu {
+  display: none;
+}
+
+
+/* ============ Mediaquerys 768px ============= */
 
 @media screen and (max-width: 768px){
   nav .logo {
     min-width: 12rem;
   }
 
-  nav .desktop .primary-links, nav .desktop .secondary-links {
+  nav .desktop .secondary-links {
     display: none;
   }
 
-  .secondary.mini {
+  nav .desktop .secondary {
     display: block;
   }
+
+  nav .desktop .secondary .mini:hover .submenu {
+    display: block;
+    background: #1a1a1a;
+    color: #fafafa;
+  }
+
+.secondary {
+    display: block;
+  }
+
 }
 
 
-/* ============================ */
-
+/* ============ Mediaquerys 480px ============= */
 @media screen and (max-width: 480px){
   nav .logo {
     display: none;
+  }
+  nav a {
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+  }
+
+ 
+}
+
+
+/* ============ Mediaquerys 414px ============= */
+@media screen and (max-width: 414px){
+  nav a {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
   }
 }
