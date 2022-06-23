@@ -20,8 +20,13 @@ nav .mobile {
   display: none;
 }
 
+nav .mobile .header {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav .logo {
-  min-width: 25rem;
+  min-width: 20rem;
 }
 
 nav a {
@@ -33,76 +38,97 @@ nav a {
 
 nav a:hover {
   color: #1e1e1e;
-  background-color: rgba(0, 195, 255, 0.8);
+  background-color: #00c3ffcc;
+  border-radius: 1.2rem;
 }
 
 nav .desktop {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0 2rem;
 }
 
-nav .desktop .primary-links, 
-nav .desktop .secondary-links {
+nav .desktop .primary, 
+nav .desktop .secondary {
   display: flex;
 }
 
-.secondary {
+nav .desktop .secondary.mini {
   display: none;
 }
 
-nav .desktop .submenu {
-  display: none;
-}
+nav .desktop .submenu {}
 
 
 /* ============ Mediaquerys 768px ============= */
 
 @media screen and (max-width: 768px){
   nav .logo {
-    min-width: 12rem;
+    width: 13rem;
   }
-
-  nav .desktop .secondary-links {
+  
+  nav .secondary.full {
     display: none;
   }
-
-  nav .desktop .secondary {
+  nav .secondary.mini {
     display: block;
   }
-
-  nav .desktop .secondary .mini:hover .submenu {
-    display: block;
-    background: #1a1a1a;
-    color: #fafafa;
+  nav .secondary.mini .submenu {
+    background-color: #1e1e1e;
+    position: absolute;
+    display: none;
+    width: 18rem;
+    right: 0;
+    text-align: center;
   }
-
-.secondary {
+  nav .secondary.mini:hover .submenu {
     display: block;
   }
-
 }
 
 
 /* ============ Mediaquerys 480px ============= */
 @media screen and (max-width: 480px){
   nav .logo {
-    display: none;
+    display: none !important;
   }
   nav a {
-    font-size: 1.4rem;
-    padding: 1.5rem 2rem;
+    font-size: 1.2rem;
   }
-
- 
+  
 }
 
 
 /* ============ Mediaquerys 414px ============= */
 @media screen and (max-width: 414px){
-  nav a {
-    font-size: 1.2rem;
-    padding: 1rem 1.5rem;
+  nav .desktop{
+    display: none;
   }
+  nav .mobile {
+    display: block;
+  }
+  nav a {
+    padding: 1.5rem 1.5rem;
+  }
+
+  nav .mobile .header .txt-logo h3 {
+    padding-top: 0.5rem;
+  }
+  
+  nav .mobile .header .more button {
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    color: #1e1e1e;
+    background-color: #00c3ffcc;
+  }
+
+
+  nav .mobile .header .txt-logo h3 span {
+    color: #00c3ff;
+  }
+ 
 }
